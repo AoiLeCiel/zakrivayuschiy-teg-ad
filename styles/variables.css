@@ -1,1 +1,42 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: "Inter", "Arial", sans-serif;
+  --accent-font: "PressStart2P", "Courier New", monospace;
+
+  --card-text-weight: 400;
+  --card-title-weight: 785;
+
+  --main-color: #000;
+  --background-color: #fff;
+  --grid-line-color: #d3d3d3;
+  --gradient-start: #e7e7e7;
+  --gradient-end: #1a1a1a;
+
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --stroke-color: #fff;
+  --button-text-color: #fff;
+
+  --backdrop-color: rgb(0 0 0 / 0.75);
+
+  --content-width: clamp(320px, 100%, 700px);
+  --dialog-width: 353px;
+
+  --page-background:
+    repeating-linear-gradient(
+      to right,
+      var(--grid-line-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--grid-line-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradient-start) 0.01%,
+      var(--gradient-end) 100%
+    );
+}
